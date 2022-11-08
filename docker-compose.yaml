@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  echarts-website:
+    image: danjellz/http-server
+    restart: "no"
+    network_mode: host
+    volumes:
+      - ./echarts-website:/public
+
